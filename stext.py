@@ -1,8 +1,10 @@
+# imports
 from random import shuffle
 from rich import print
 import os.path
 import os
 
+# file name
 while True:
     print("[yellow]Example: 'file.txt'")
     print("[yellow]What's the file name (It must be in this folder)?:", end=" ")
@@ -19,8 +21,10 @@ while True:
 strings = [line.strip() for line in open('test.txt')]
 shuffle(strings)
 
+# file deletion
 os.remove(f"{file_name}")
 
+# writing the shuffled lines to the file
 file = open(file_name, 'w')
 
 for string in strings:
