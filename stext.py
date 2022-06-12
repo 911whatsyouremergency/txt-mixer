@@ -22,7 +22,7 @@ strings = [line.strip() for line in open('test.txt')]
 shuffle(strings)
 
 # file deletion
-os.remove(f"{file_name}")
+os.remove(file_name)
 
 # writing the shuffled lines to the file
 file = open(file_name, 'w')
